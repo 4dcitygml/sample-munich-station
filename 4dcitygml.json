@@ -1,0 +1,15 @@
+{
+  "id": "munich-station",
+  "name": { "en": "Munich Hauptbahnhof demo", "ja": "ミュンヘン中央駅デモ", "de": "Demo München Hbf" },
+  "repo": "4dcitygml/sample-munich-station",
+  "logo": "logo.png",
+  "country": "DE",
+  "lang": "de",
+  "crs": "EPSG:25832",
+  "units": "m",
+  "building_id": { "type": "gml:id", "official": "externalReference (ALKIS)" },
+  "data_dirs": ["lod2_citygml"],
+  "map": { "tiles": "osm", "center": [48.1403, 11.5600], "zoom": 15 },
+  "attribution": "Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de — CC BY 4.0",
+  "license": "CC-BY-4.0"
+}

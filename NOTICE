@@ -1,0 +1,38 @@
+sample-munich-station
+Copyright (c) 2026 4dcitygml
+
+Project code, configuration, CI workflows, and documentation are licensed
+under the Apache License 2.0 (LICENSE, Section A). The city dataset keeps its
+original CC BY 4.0 license (LICENSE, Section B).
+
+City dataset provenance
+-----------------------
+- Dataset: LoD2-Gebäudemodelle (CityGML, LoD2, no textures), area around
+  München Hauptbahnhof
+- Publisher: Bayerische Vermessungsverwaltung — OpenData
+  (https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=lod2)
+- Original license: CC BY 4.0
+  (https://www.geodaten.bayern.de/odd/m/3/html/nutzungsbedingungen.html)
+- Quellenvermerk (attribution): Datenquelle: Bayerische Vermessungsverwaltung
+  – www.geodaten.bayern.de — CC BY 4.0
+- Acquired: 2026-08-21 (official 2 km tile 690_5334; the original download is
+  not part of this repository)
+- Coordinate reference system: unchanged from the original (ETRS89 / UTM 32N)
+- Stable building IDs: gml:id (unchanged from the original; 5,499 buildings)
+
+Daten verändert — modifications from the original distribution:
+1. Tile split — the 2 km tile 690_5334 was split into four 1 km files
+   (lod2_citygml/690_5334_1.gml, 690_5335_1.gml, 691_5334_1.gml,
+   691_5335_1.gml) to keep files reviewable in pull requests. Building
+   contents and gml:id values are unchanged by the split.
+2. Ongoing collaborative edits — buildings are updated through reviewed pull
+   requests; every change is recorded in the git history of this repository
+   (per-building commits). docs/provenance-rules.md defines how sources are
+   recorded inside the data.
+
+Newly contributed images must follow docs/data-contribution-policy.md
+(rights, no identifiable persons / plates, removal-request contact).
+
+This repository is a practice environment and is not affiliated with or
+endorsed by the Bayerische Vermessungsverwaltung. CityGML is a standard of
+the Open Geospatial Consortium (OGC); this project is not affiliated with OGC.
