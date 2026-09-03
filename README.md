@@ -14,6 +14,7 @@ PR-Ablauf kennen, bevor Sie zu produktiven Stadtdaten beitragen.
   `install/start-windows.bat` (Windows) ausführen. Das gemeinsame
   Bearbeitungswerkzeug wird automatisch heruntergeladen und verbindet sich mit
   dieser Stadt — keine Stadtauswahl nötig.
+  Schritt für Schritt vom Klonen bis zum ersten Vorschlag: [Erste Schritte](docs/de/getting-started.md).
 - **Datenquelle & Lizenz:** siehe `4dcitygml.json` (`attribution` / `license`).
   Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de — CC BY 4.0.
 - **Erscheinungsbild:** `theme.json` (nur deklarative Tokens; Änderungen laufen
