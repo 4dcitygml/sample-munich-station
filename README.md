@@ -10,11 +10,13 @@ gepflegt über Pull Requests. **Dieses Repository ist eine Übungs-Sandbox, die
 bei Bedarf manuell zurückgesetzt wird** — hier lernen Sie die Bearbeitungswerkzeuge und den
 PR-Ablauf kennen, bevor Sie zu produktiven Stadtdaten beitragen.
 
-- **Loslegen (Übung):** `install/start-mac.command` (macOS) oder
-  `install/start-windows.bat` (Windows) ausführen. Das gemeinsame
-  Bearbeitungswerkzeug wird automatisch heruntergeladen und verbindet sich mit
-  dieser Stadt — keine Stadtauswahl nötig.
-  Schritt für Schritt vom Klonen bis zum ersten Vorschlag: [Erste Schritte](docs/de/getting-started.md).
+- **Loslegen (Übung):** das
+  [Starter-Kit](https://github.com/4dcitygml/sample-munich-station/releases/download/starter-kit/munich-station-starter.zip)
+  herunterladen, entpacken und `start-mac.command` (macOS) oder `start-windows.bat`
+  (Windows) doppelklicken. Das gemeinsame Bearbeitungswerkzeug wird automatisch
+  heruntergeladen und verbindet sich mit dieser Stadt; das Repository muss nicht geklont
+  werden (Ihre eigene Kopie legt das Werkzeug an).
+  Schritt für Schritt, auch für die direkte Arbeit mit Git: [Erste Schritte](docs/de/getting-started.md).
 - **Datenquelle & Lizenz:** siehe `4dcitygml.json` (`attribution` / `license`).
   Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de — CC BY 4.0.
 - **Erscheinungsbild:** `theme.json` (nur deklarative Tokens; Änderungen laufen
