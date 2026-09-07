@@ -10,12 +10,22 @@ gepflegt über Pull Requests. **Dieses Repository ist eine Übungs-Sandbox, die
 bei Bedarf manuell zurückgesetzt wird** — hier lernen Sie die Bearbeitungswerkzeuge und den
 PR-Ablauf kennen, bevor Sie zu produktiven Stadtdaten beitragen.
 
-- **Loslegen (Übung):** das
-  [Starter-Kit](https://github.com/4dcitygml/sample-munich-station/releases/download/starter-kit/munich-station-starter.zip)
-  herunterladen, entpacken und `start-mac.command` (macOS) oder `start-windows.bat`
-  (Windows) doppelklicken. Das gemeinsame Bearbeitungswerkzeug wird automatisch
-  heruntergeladen und verbindet sich mit dieser Stadt; das Repository muss nicht geklont
-  werden (Ihre eigene Kopie legt das Werkzeug an).
+- **Loslegen (Übung):** ein Terminal öffnen und eine Zeile einfügen.
+  macOS (Terminal):
+  ```
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/4dcitygml/tools/install-v1/install/citygml.sh)" -- 4dcitygml/sample-munich-station
+  ```
+  Windows (PowerShell):
+  ```
+  & ([scriptblock]::Create((irm https://raw.githubusercontent.com/4dcitygml/tools/install-v1/install/citygml.ps1))) 4dcitygml/sample-munich-station
+  ```
+  Die gemeinsamen Bearbeitungswerkzeuge werden aus `4dcitygml/tools` heruntergeladen,
+  geprüft und mit dieser Stadt verbunden; das Repository muss nicht geklont werden
+  (Ihre eigene Kopie legt das Werkzeug an), und ab dem zweiten Mal öffnet ein
+  Desktop-Symbol die Werkzeuge. Diese Zeile installiert und startet; sie erneut
+  auszuführen ist immer sicher. Neue Versionen werden in den Werkzeugen selbst
+  angeboten. Wer vor September 2026 mit dem Starter-Kit installiert hat, führt die
+  Zeile einmal erneut aus (die alte Installation bleibt liegen und kann gelöscht werden).
   Schritt für Schritt, auch für die direkte Arbeit mit Git: [Erste Schritte](docs/de/getting-started.md).
 - **Datenquelle & Lizenz:** siehe `4dcitygml.json` (`attribution` / `license`).
   Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de — CC BY 4.0.
