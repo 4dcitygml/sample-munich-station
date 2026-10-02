@@ -13,8 +13,8 @@ Genehmigenden der Stadt freigegeben wird.
 Danach: die automatischen Prüfungen laufen in wenigen Minuten ab und veröffentlichen
 ihren Bericht, und die Genehmigenden der Stadt geben den Vorschlag frei — Sie
 müssen nur handeln, wenn jemand bittet, etwas zu ändern. Für die Regeln, denen Vorschläge
-folgen müssen, siehe die [PR-Anleitung](pr-operations.md)
-und die [Regeln zur Quellenerfassung](provenance-rules.md). Was beigetragen werden darf, siehe die
+folgen müssen, siehe die [PR-Anleitung](../pr-operations.md) (englisch)
+und die [Regeln zur Quellenerfassung](../provenance-rules.md) (englisch). Was beigetragen werden darf, siehe die
 [Richtlinie für Datenbeiträge](data-contribution-policy.md).
 
 ## 1. Schnellstart: ein Befehl
@@ -138,8 +138,9 @@ ohne Ihren Klick heruntergeladen oder neu gestartet.
 ## 8. Übungs-Repositorys
 
 Die Beispielstädte sind Übungsumgebungen. Vorschläge, Kommentare und Begutachtung dort sind
-echte GitHub-Historie, die Daten werden aber regelmäßig auf den Ausgangsstand
-zurückgesetzt. Ein übernommener Übungsvorschlag muss nicht „richtig" sein, er muss den
+echte GitHub-Historie. Von Zeit zu Zeit setzt ein Maintainer die Daten mit einem
+Reset-Pull-Request auf den Ausgangsstand zurück; die Historie bleibt erhalten. Ein
+übernommener Übungsvorschlag muss nicht „richtig" sein, er muss den
 Regeln folgen. Nutzen Sie sie frei, bevor Sie an einer echten Stadt arbeiten.
 
 ## 9. Fehlerbehebung
@@ -183,9 +184,9 @@ weglassen.
   Web-Editor, Codespaces, die API, die CLI, Actions in Ihrem Fork.
 - **Die Regeln liegen im Pull Request, nicht im Werkzeug.** Die automatischen Prüfungen
   wenden auf jeden Vorschlag dieselben vierzehn Prüfpunkte an, egal wie er entstand.
-  Lesen Sie vor dem ersten manuellen Vorschlag die [PR-Anleitung](pr-operations.md) (eine
+  Lesen Sie vor dem ersten manuellen Vorschlag die [PR-Anleitung](../pr-operations.md) (englisch) (eine
   Änderung = ein Gebäude, Commit-Trailer, Begründungsabschnitt, bytegenaue Bearbeitung),
-  die [Regeln zur Quellenerfassung](provenance-rules.md) und den maschinenlesbaren
+  die [Regeln zur Quellenerfassung](../provenance-rules.md) (englisch) und den maschinenlesbaren
   [PR Exchange Contract](https://github.com/4dcitygml/tools/blob/main/docs/exchange-contract.md),
   der genau festhält, was die CI erzwingt, und einen lokalen Prüfer anbietet, der denselben
   Code wie die CI ausführt.

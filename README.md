@@ -52,20 +52,19 @@ Bearbeitungswerkzeug (siehe „Loslegen" oben).
 
 ## Die Übungsumgebung
 
-Der tägliche Reset und der automatische Merge sind derzeit **deaktiviert**.
-Die Sandbox dient dazu, Werkzeuge und PR-Abläufe mit einer Prüfung durch den
-Maintainer zu üben, ohne Produktivdaten zu berühren.
+Die Sandbox dient dazu, Werkzeuge und PR-Abläufe zu üben, ohne Produktivdaten
+zu berühren.
 
+- **Jeder Pull Request wird vom Maintainer geprüft:** Der Maintainer prüft
+  jeden Vorschlag, bevor er gemergt wird.
 - **Manueller Reset:** Nur ein Maintainer kann nach Eingabe des Bestätigungsworts
-  `RESET` den `main`-Branch auf `baseline` zurücksetzen. Offene Pull Requests
-  erhalten dabei einen Hinweis.
-- **Manueller Merge:** Jeder Pull Request wird vor dem Merge durch den Maintainer
-  geprüft. Der Auto-Merge-Code bleibt für eine spätere Neubewertung erhalten,
-  startet aber ohne die dafür vorgesehene Repository-Variable nicht.
+  `RESET` einen Pull Request öffnen, der die Daten auf `baseline` zurücksetzt;
+  die Historie bleibt erhalten. Offene Vorschläge, die nur Daten ändern, werden
+  dabei mit einem Hinweis geschlossen.
 - **Nach jedem Reset den Fork synchronisieren:** Wenn Sie dieses Repository
   geforkt haben, klicken Sie vor der nächsten Übung auf GitHub auf
   **Sync fork** → **Update branch**. Andernfalls geraten die beim Reset
-  gelöschten Bearbeitungen von gestern in den Diff Ihres nächsten PRs und werden
+  zurückgesetzten Bearbeitungen in den Diff Ihres nächsten PRs und werden
   von der Commit-Umfang-Prüfung abgewiesen.
   - **Mit dem offiziellen Bearbeitungswerkzeug:** Die Synchronisierung geschieht
     bei jedem Start automatisch — kein manuelles Sync fork nötig.
