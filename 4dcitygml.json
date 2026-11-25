@@ -6,11 +6,11 @@
   "country": "DE",
   "lang": "de",
   "crs": "EPSG:25832",
-  "units": "m",
-  "building_id": { "type": "gml:id", "official": "externalReference (ALKIS)" },
+  "building_id": { "type": "gml:id" },
   "data_dirs": ["lod2_citygml"],
   "map": { "tiles": "osm", "center": [48.1403, 11.5600], "zoom": 15 },
   "attribution": "Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de — CC BY 4.0",
   "license": "CC-BY-4.0",
+  "tools": "0804fc449e1cc517898e852878820397204c3541",
   "min_hub": "hub-v1.5.0"
 }
