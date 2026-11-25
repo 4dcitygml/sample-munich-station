@@ -10,7 +10,8 @@ gepflegt über Pull Requests. **Dieses Repository ist eine Übungs-Sandbox, die
 bei Bedarf manuell zurückgesetzt wird** — hier lernen Sie die Bearbeitungswerkzeuge und den
 PR-Ablauf kennen, bevor Sie zu produktiven Stadtdaten beitragen.
 
-- **Loslegen (Übung):** ein Terminal öffnen und eine Zeile einfügen.
+- **Loslegen (Übung):** ein Terminal öffnen (wie:
+  [Erste Schritte, Abschnitt 1](docs/de/getting-started.md#1-schnellstart-ein-befehl)) und eine Zeile einfügen.
   macOS (Terminal):
   ```
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/4dcitygml/tools/install-v1/install/citygml.sh)" -- 4dcitygml/sample-munich-station
@@ -21,13 +22,19 @@ PR-Ablauf kennen, bevor Sie zu produktiven Stadtdaten beitragen.
   ```
   Die gemeinsamen Bearbeitungswerkzeuge werden aus `4dcitygml/tools` heruntergeladen,
   geprüft und mit dieser Stadt verbunden; das Repository muss nicht geklont werden
-  (Ihre eigene Kopie legt das Werkzeug an), und ab dem zweiten Mal öffnet ein
-  Desktop-Symbol die Werkzeuge. Diese Zeile installiert und startet; sie erneut
+  (Ihre eigene Kopie legt das Werkzeug an). Wie Sie die Werkzeuge beim nächsten Mal
+  öffnen, mit oder ohne Desktop-Symbol:
+  [Erste Schritte, Abschnitt 7](docs/de/getting-started.md#7-beim-nächsten-mal). Diese Zeile installiert und startet; sie erneut
   auszuführen ist immer sicher. Neue Versionen werden in den Werkzeugen selbst
   angeboten. Wer vor September 2026 mit dem Starter-Kit installiert hat, führt die
   Zeile einmal erneut aus (die alte Installation bleibt liegen und kann gelöscht werden).
   Schritt für Schritt, auch für die direkte Arbeit mit Git: [Erste Schritte](docs/de/getting-started.md).
+- **Übungsfotos:** `docs/practice-photos/` enthält vier Fassadenfotos aus diesem Gebiet
+  (CC0 / gemeinfrei) zum Üben des Textur-Editors; Quellen in
+  [CREDITS.md](docs/practice-photos/CREDITS.md).
 - **Datenquelle & Lizenz:** siehe `4dcitygml.json` (`attribution` / `license`).
+- **Gebäude-ID:** Die Gebäude-ID dieser Daten ist die `gml:id` (`building_id` in
+  `4dcitygml.json`); die amtliche Kennung steht in `externalReference` (ALKIS).
   Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de — CC BY 4.0.
 - **Erscheinungsbild:** `theme.json` (nur deklarative Tokens; Änderungen laufen
   über den PR-Review).
@@ -58,9 +65,9 @@ zu berühren.
 - **Jeder Pull Request wird vom Maintainer geprüft:** Der Maintainer prüft
   jeden Vorschlag, bevor er gemergt wird.
 - **Manueller Reset:** Nur ein Maintainer kann nach Eingabe des Bestätigungsworts
-  `RESET` einen Pull Request öffnen, der die Daten auf `baseline` zurücksetzt;
-  die Historie bleibt erhalten. Offene Vorschläge, die nur Daten ändern, werden
-  dabei mit einem Hinweis geschlossen.
+  `RESET` einen Pull Request vorbereiten, der die Daten auf `baseline` zurücksetzt;
+  die Historie bleibt erhalten. Wenn er gemergt wird, werden offene Vorschläge,
+  die nur Daten ändern, mit einem Hinweis geschlossen.
 - **Nach jedem Reset den Fork synchronisieren:** Wenn Sie dieses Repository
   geforkt haben, klicken Sie vor der nächsten Übung auf GitHub auf
   **Sync fork** → **Update branch**. Andernfalls geraten die beim Reset
