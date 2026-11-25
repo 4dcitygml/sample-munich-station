@@ -44,9 +44,9 @@ Was der Reihe nach passiert:
    Kopie des Launcher-Skripts bleibt in `~/Documents/citygml-tools/`.
 3. Der Hub öffnet sich im Browser, bereits mit dieser Stadt verbunden. Lassen Sie das Terminalfenster
    während der Arbeit offen; schließen beendet die Werkzeuge.
-4. Nach der Einrichtung unten bietet der Hub an, ein **Desktop-Symbol** für diese Stadt zu erstellen.
-   Von dann an öffnen Sie die Werkzeuge mit diesem Symbol; die Terminal-Zeile ist nur für das
-   erste Mal (oder einen anderen Rechner).
+4. Nach der Einrichtung unten bietet der Hub ein **Desktop-Symbol** für diese Stadt an; ob Sie es
+   ablegen, entscheiden Sie. Wie Sie die Werkzeuge beim nächsten Mal öffnen, mit oder ohne Symbol:
+   [Beim nächsten Mal](#7-beim-nächsten-mal).
 
 Dieses Repository enthält nur Daten, Dokumente und Einstellungen. Jedes Programm, das auf
 Ihrem Rechner läuft, kommt aus `4dcitygml/tools`-Veröffentlichungen — dasselbe für jede Stadt.
@@ -125,11 +125,19 @@ ist Ihr GitHub-Konto, wie bei jedem Pull Request.
 
 ## 7. Beim nächsten Mal
 
-Doppelklicken Sie auf das Desktop-Symbol, das der Hub erstellt hat (oder führen Sie denselben Befehl
-erneut aus — es ist sicher zu wiederholen). Die Einrichtung entfällt, der Hub öffnet sich direkt. Der Hub
+Doppelklicken Sie auf das Desktop-Symbol, falls Sie eines abgelegt haben. Ohne Symbol öffnen Sie das
+Terminal wie im [Schnellstart](#1-schnellstart-ein-befehl) und führen denselben Befehl erneut aus (es ist
+sicher zu wiederholen), oder das Launcher-Skript, das auf Ihrem Rechner bleibt:
+
+- macOS (Terminal): `~/Documents/citygml-tools/citygml.sh 4dcitygml/sample-munich-station`
+- Windows (PowerShell): `powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Documents\citygml-tools\citygml.ps1" 4dcitygml/sample-munich-station`
+
+Das Terminalfenster des Hubs und sein letzter Einrichtungsbildschirm zeigen diesen Befehl für die Stadt.
+Die Einrichtung entfällt, der Hub öffnet sich direkt. Der Hub
 bringt Ihre Kopie der Stadtdaten im Hintergrund auf den neuesten Stand und zeigt den Zustand
 auf dem Bildschirm; wird ein Vorschlag als hinter der Stadt (*base stale*) gemeldet,
-senden Sie ihn vom selben Gebäude erneut, nach der Synchronisation.
+senden Sie ihn vom selben Gebäude erneut, nach der Synchronisation. Auf GitHub bringt
+die Schaltfläche **Update branch** im Pull Request ihn ebenfalls auf den neuesten Stand.
 
 Wenn eine neuere Version der Werkzeuge veröffentlicht wird, zeigt der Hub ein Banner. *Jetzt
 abrufen* lädt und prüft sie; die neue Version wird beim nächsten Start verwendet. Nichts wird
@@ -191,8 +199,7 @@ weglassen.
   der genau festhält, was die CI erzwingt, und einen lokalen Prüfer anbietet, der denselben
   Code wie die CI ausführt.
 - **Ein eigenes Werkzeug bauen.** Jedes Programm, das vertragskonforme Vorschläge erzeugt,
-  ist willkommen, vom Skript bis zum vollständigen Editor oder QGIS-Plugin. Fügen Sie einen
-  `Created-By:`-Trailer hinzu, damit die Betreuung Clients unterscheiden kann, nutzen Sie
+  ist willkommen, vom Skript bis zum vollständigen Editor oder QGIS-Plugin. Nutzen Sie
   die Übungs-Repositorys als Sandkasten und berichten Sie in einem Issue in
   `4dcitygml/tools` davon.
 - **Wo die Kopie des Hubs liegt.** Wenn Sie zusätzlich den Hub verwenden, ist seine
